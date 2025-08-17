@@ -45,13 +45,21 @@ export default function App() {
           </h1>
 
           {/* Down Arrow */}
-          <div className="animate-bounce text-2xl mt-10 sm:text-3xl">↓</div>
+          <div className="animate-bounce text-2xl mt-10 sm:text-3xl cursor-pointer"
+    onClick={() => {
+      const aboutSection = document.getElementById("about");
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }}
+  >
+    ↓</div>
         </div>
       </div>
 
 
       {/* About Section */}
-<section className="w-full bg-black text-white py-20 px-6">
+<section id="about" className="w-full bg-black text-white py-20 px-6">
   <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start font-interTight">
     
     {/* Left Icon */}
@@ -117,6 +125,65 @@ export default function App() {
     </div>
   </div>
 </section>
+
+
+{/* Work / Projects Section */}
+<section className="w-full bg-black text-white py-20 px-6">
+  <div className="max-w-6xl mx-auto">
+    {/* Title */}
+    <h2 className="text-4xl sm:text-4xl font-interTight mb-16 text-left">
+      Work
+    </h2>
+
+    {/* Projects Grid */}
+    <div className="grid grid-cols-1 gap-10 text-left font-interTight">
+      
+      {/* Project 1 */}
+      <div className="flex flex-row justify-between items-start">
+        <div>
+          <p className="text-gray-400 text-sm">2025</p>
+          <p className="text-base text-sm">Portfolio Website</p>
+          <a
+            href="https://github.com/blurryface027/my-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-red-500 hover:underline flex items-center mt-1"
+          >
+            Visit <span className="ml-1">→</span>
+          </a>
+        </div>
+        {/* Technologies Used */}
+        <div className="text-right">
+          <p className="text-gray-400 text-sm">Technologies</p>
+          <p className="text-base text-sm">React, Tailwind CSS, TypeScript, JS</p>
+        </div>
+      </div>
+
+      {/* Project 2 */}
+      <div className="flex flex-row justify-between items-start">
+        <div>
+          <p className="text-gray-400 text-sm">2024</p>
+          <p className="text-base text-sm">Logofolio v1.0</p>
+          <a
+            href="https://www.behance.net/gallery/206891783/Logofolio-V1-2024"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-red-500 hover:underline flex items-center mt-1"
+          >
+            Visit <span className="ml-1">→</span>
+          </a>
+        </div>
+        {/* Technologies Used */}
+        <div className="text-right">
+          <p className="text-gray-400 text-sm">Design Tools</p>
+          <p className="text-base text-sm">Illustrator, Photoshop</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
 {/* Quote Section */}
