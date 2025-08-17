@@ -24,7 +24,7 @@ export default function App() {
 </div>
 
         <div className="absolute top-5 right-5 text-[10px] sm:text-xs md:text-sm font-interTight text-right">
-          GRAPHIC DESIGNER & FRONTEND DEVELOPER<br /> BASED IN INDIA
+          GRAPHIC DESIGNER<br /> FRONTEND DEVELOPER<br /> BASED IN INDIA
         </div>
 
         {/* Hero Content */}
