@@ -70,8 +70,8 @@ export default function App() {
     {/* Short Intro */}
     <div className="text-left">
       <p className="text-base leading-relaxed text-gray-300 text-sm">
-        Hi, I’m Krishna — Brand Designer & Frontend Developer. <br />
-        passionate about crafting meaningful identities and building modern, high-performing web experiences.
+        Hi, I’m Krishna — Graphic Designer<br/>
+        and Frontend Developer.
       </p>
     </div>
 
@@ -212,6 +212,7 @@ export default function App() {
     { name: "Instagram", url: "https://instagram.com/gh0stfreak027" },
     { name: "Behance", url: "https://behance.net/krishnadzns" },
     { name: "Twitter", url: "https://twitter.com/blurryface027" },
+    { name: "GitHub", url: "https://github.com/blurryface027" },
   ].map((platform) => (
     <a
       key={platform.name}
