@@ -62,15 +62,15 @@ export default function App() {
     {/* Short Intro */}
     <div className="text-left">
       <p className="text-base leading-relaxed text-gray-300 text-sm">
-        Hi, I'm Krishna, a Brand Designer and Frontend Developer <br />
-        passionate about creating meaningful identities and modern web experiences.
+        Hi, I’m Krishna — Brand Designer & Frontend Developer. <br />
+        passionate about crafting meaningful identities and building modern, high-performing web experiences.
       </p>
     </div>
 
     {/* Detailed Description */}
     <div className="text-left">
       <p className="text-base leading-relaxed text-gray-300 text-sm">
-        I create distinctive Visual Identities and seamless Frontend Interfaces powered by Vite, Next, React, Angular, TypeScript, JavaScript, HTML, CSS, Framer Motion and Tailwind.
+        I specialize in creating distinctive Visual Identities and Seamless Interfaces using Vite, Next.js, React, Angular, TypeScript, JavaScript, HTML, CSS, Framer Motion, and Tailwind.
       </p>
     </div>
   </div>
