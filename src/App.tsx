@@ -70,15 +70,15 @@ export default function App() {
     {/* Short Intro */}
     <div className="text-left">
       <p className="text-base leading-relaxed text-gray-300 text-sm">
-        Hi, I’m Krishna — Graphic Designer<br/>
-        and Frontend Developer.
+        HI, I’M KRISHNA — GRAPHIC DESIGNER<br/>
+        AND FRONTEND DEVELOPER, CRAFTING MODERN DIGITAL EXPERIENCES.
       </p>
     </div>
 
     {/* Detailed Description */}
     <div className="text-left">
       <p className="text-base leading-relaxed text-gray-300 text-sm">
-        I specialize in creating distinctive Visual Identities and Seamless Interfaces using Vite, Next.js, React, Angular, TypeScript, JavaScript, HTML, CSS, Framer Motion, and Tailwind.
+        I SPECIALIZE IN CREATING DISTINCTIVE VISUAL IDENTITIES AND SEAMLESS INTERFACES USING VITE, NEXT.JS, REACT, ANGULAR, TYPESCRIPT, JAVASCRIPT, HTML, CSS, FRAMER MOTION, AND TAILWIND.
       </p>
     </div>
   </div>
@@ -155,7 +155,7 @@ export default function App() {
         {/* Technologies Used */}
         <div className="text-right">
           <p className="text-gray-400 text-sm">Technologies</p>
-          <p className="text-base text-md">React, Tailwind CSS, JS</p>
+          <p className="text-base text-md">React, Tailwind CSS, Typescript, JavaScript</p>
         </div>
       </div>
 
@@ -175,8 +175,8 @@ export default function App() {
         </div>
         {/* Technologies Used */}
         <div className="text-right">
-          <p className="text-gray-400 text-sm">Technologies</p>
-          <p className="text-base text-md">Illustrator, Photoshop, Figma</p>
+          <p className="text-gray-400 text-sm">Design Tools</p>
+          <p className="text-base text-md">Illustrator, Photoshop</p>
         </div>
       </div>
 
@@ -196,7 +196,6 @@ export default function App() {
     </h2>
   </div>
 </section>
-
 
 
       {/* Footer Section */}

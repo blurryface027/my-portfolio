@@ -44,5 +44,5 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-  background: #000; /* ensures no white shows */
+  background: #000; 
 }
