@@ -85,6 +85,8 @@ export default function App() {
 </section>
 
 
+
+
 {/* Experiences Section */}
 <section className="w-full bg-black text-white py-20 px-6">
   <div className="max-w-6xl mx-auto">
@@ -98,28 +100,28 @@ export default function App() {
       {/* 2019 */}
       <div>
         <p className="text-gray-400 text-sm">2025</p>
-        <p className="text-base text-sm">Graphic Design Intern</p>
+        <p className="text-base text-sm">GRAPHIC DESIGN INTERN</p>
         <p className="text-red-400 text-sm">InAmigos Foundation</p>
       </div>
 
       {/* 2020 */}
       <div>
         <p className="text-gray-400 text-sm">2022</p>
-        <p className="text-base text-sm">Frontend Development</p>
+        <p className="text-base text-sm">FRONTEND DEVELOPMENT</p>
         <p className="text-red-400 text-sm">Self Taught</p>
       </div>
 
       {/* 2021 */}
       <div>
         <p className="text-gray-400 text-sm">2021</p>
-        <p className="text-base text-sm">Freelance Video Editor</p>
+        <p className="text-base text-sm">FREELANCE VIDEO EDITOR</p>
         <p className="text-red-400 text-sm">Independent</p>
       </div>
 
       {/* 2023 */}
       <div>
         <p className="text-gray-400 text-sm">2020</p>
-        <p className="text-base text-sm">Freelance Graphic Designer</p>
+        <p className="text-base text-sm">FREELANCE GRAPHIC DESIGNER</p>
         <p className="text-red-400 text-sm">Independent</p>
       </div>
     </div>
@@ -141,7 +143,7 @@ export default function App() {
       <div className="flex flex-row justify-between items-start  border-white/10 pt-10">
         <div>
           <p className="text-gray-400 text-sm">2025</p>
-          <p className="text-base text-sm">Portfolio Website</p>
+          <p className="text-base text-sm">PORTFOLIO WEBSITE</p>
           <a
             href="https://github.com/blurryface027/my-portfolio"
             target="_blank"
@@ -162,7 +164,7 @@ export default function App() {
       <div className="flex flex-row justify-between items-start border-t border-white/10 pt-10">
         <div>
           <p className="text-gray-400 text-sm">2024</p>
-          <p className="text-base text-sm">Logofolio v1.0</p>
+          <p className="text-base text-sm">LOGOFOLIO v1.0</p>
           <a
             href="https://www.behance.net/gallery/206891783/Logofolio-V1-2024"
             target="_blank"
@@ -187,7 +189,7 @@ export default function App() {
 
 {/* Quote Section */}
 <section className="w-full bg-black text-white py-20 px-6">
-  <div className="max-w-6xl mx-auto mb-10"> {/* <- same wrapper */}
+  <div className="max-w-6xl mx-auto"> {/* <- same wrapper */}
     <h2 className="font-interTight text-left text-5xl sm:text-5xl md:text-6xl leading-tight">
       Minimal.<br />
       Modern.<br />
