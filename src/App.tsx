@@ -40,7 +40,7 @@ export default function App() {
           </div>
 
           {/* Main Name */}
-          <h1 className="text-7xl sm:text-7xl md:text-8xl lg:text-8xl mt-1 font-medium tracking-tight text-center">
+          <h1 className="text-7xl sm:text-7xl md:text-8xl lg:text-8xl mt-1 font-bold tracking-tight text-center">
             KRISHNA SHARMA
           </h1>
 
@@ -56,6 +56,7 @@ export default function App() {
     ↓</div>
         </div>
       </div>
+
 
 
       {/* About Section */}
@@ -199,6 +200,7 @@ export default function App() {
 </section>
 
 
+
       {/* Footer Section */}
       <footer className="w-full bg-black/70 backdrop-blur-md border-t border-white/10 text-white py-6 px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs sm:text-sm font-interTight">
         {/* Left */}
@@ -226,11 +228,14 @@ export default function App() {
   ))}
 </div>
 
-
         {/* Right - Live Clock */}
-        <div className="font-mono text-center md:text-right">
-          {time.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
-        </div>
+<div className="font-mono text-center md:text-right">
+  {time.toLocaleTimeString([], { 
+    hour: "2-digit", 
+    minute: "2-digit", 
+    hour12: true 
+  })}
+</div>
       </footer>
     </div>
   );
