@@ -99,28 +99,28 @@ export default function App() {
       <div>
         <p className="text-gray-400 text-sm">2025</p>
         <p className="text-base text-md">Graphic Design Intern</p>
-        <p className="text-gray-400 text-sm">InAmigos Foundation</p>
+        <p className="text-red-400 text-sm">InAmigos Foundation</p>
       </div>
 
       {/* 2020 */}
       <div>
         <p className="text-gray-400 text-sm">2022</p>
         <p className="text-base text-md">Frontend Development</p>
-        <p className="text-gray-400 text-sm">Self Taught</p>
+        <p className="text-red-400 text-sm">Self Taught</p>
       </div>
 
       {/* 2021 */}
       <div>
         <p className="text-gray-400 text-sm">2021</p>
         <p className="text-base text-md">Freelance Video Editor</p>
-        <p className="text-gray-400 text-sm">Independent</p>
+        <p className="text-red-400 text-sm">Independent</p>
       </div>
 
       {/* 2023 */}
       <div>
         <p className="text-gray-400 text-sm">2020</p>
         <p className="text-base text-md">Freelance Graphic Designer</p>
-        <p className="text-gray-400 text-sm">Independent</p>
+        <p className="text-red-400 text-sm">Independent</p>
       </div>
     </div>
   </div>
