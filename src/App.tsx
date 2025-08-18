@@ -154,7 +154,7 @@ export default function App() {
         {/* Technologies Used */}
         <div className="text-right">
           <p className="text-gray-400 text-sm">Technologies</p>
-          <p className="text-base text-md">React, Tailwind CSS, Typescript, JavaScript</p>
+          <p className="text-base text-sm">React, Tailwind CSS, Typescript, JavaScript</p>
         </div>
       </div>
 
@@ -175,7 +175,7 @@ export default function App() {
         {/* Technologies Used */}
         <div className="text-right">
           <p className="text-gray-400 text-sm">Design Tools</p>
-          <p className="text-base text-md">Illustrator, Photoshop</p>
+          <p className="text-base text-sm">Illustrator, Photoshop</p>
         </div>
       </div>
 
