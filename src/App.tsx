@@ -10,7 +10,10 @@ export default function App() {
   }, []);
 
   return (
+
+    
     <div className="bg-black text-white flex flex-col font-grotesk relative overflow-hidden">
+      
       {/* Content Wrapper */}
       <div className=" flex flex-col items-center px-4">
         {/* Top Bar */}
@@ -26,6 +29,7 @@ export default function App() {
         <div className="absolute top-5 right-5 text-[10px] sm:text-xs md:text-sm font-interTight text-right">
           GRAPHIC DESIGNER<br /> FRONTEND DEVELOPER<br /> BASED IN INDIA
         </div>
+
 
         {/* Hero Content */}
         <div className="flex flex-col items-center gap-3 mt-80 mb-60 sm:gap-10 md:gap-12">
@@ -102,28 +106,28 @@ export default function App() {
       <div>
         <p className="text-gray-400 text-sm">2025</p>
         <p className="text-base text-sm">GRAPHIC DESIGN INTERN</p>
-        <p className="text-red-400 text-sm">InAmigos Foundation</p>
+        <p className="text-red-500 text-sm">InAmigos Foundation</p>
       </div>
 
       {/* 2020 */}
       <div>
         <p className="text-gray-400 text-sm">2022</p>
         <p className="text-base text-sm">FRONTEND DEVELOPMENT</p>
-        <p className="text-red-400 text-sm">Self Taught</p>
+        <p className="text-red-500 text-sm">Self Taught</p>
       </div>
 
       {/* 2021 */}
       <div>
         <p className="text-gray-400 text-sm">2021</p>
         <p className="text-base text-sm">FREELANCE VIDEO EDITOR</p>
-        <p className="text-red-400 text-sm">Independent</p>
+        <p className="text-red-500 text-sm">Independent</p>
       </div>
 
       {/* 2023 */}
       <div>
         <p className="text-gray-400 text-sm">2020</p>
         <p className="text-base text-sm">FREELANCE GRAPHIC DESIGNER</p>
-        <p className="text-red-400 text-sm">Independent</p>
+        <p className="text-red-500 text-sm">Independent</p>
       </div>
     </div>
   </div>
