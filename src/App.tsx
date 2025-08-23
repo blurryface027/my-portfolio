@@ -37,10 +37,10 @@ export default function App() {
           {/* Glassmorphic Floating Tags */}
           <div className="flex flex-wrap gap-3 sm:gap-4 justify-center text-[9px] sm:text-[10px] md:text-[12px] font-interTight">
             <span className="px-3 sm:px-4 py-2 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-              CREATIVE DESIGNER
+              THINK DESIGN
             </span>
             <span className="px-3 sm:px-4 py-2 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-              FRONTEND DEVELOPER
+              BUILD CODE
             </span>
           </div>
 
@@ -48,7 +48,7 @@ export default function App() {
 <h1 className="text-7xl sm:text-7xl md:text-8xl lg:text-8xl mt-1 font-bold tracking-tight text-center">
   <TextType
     text={["KRISHNA SHARMA"]}
-    typingSpeed={100}
+    typingSpeed={90}
     deletingSpeed={50}
     pauseDuration={2000}
     showCursor={true}
