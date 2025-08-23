@@ -14,7 +14,8 @@ export default function App() {
 
     
     <div className="bg-black text-white flex flex-col font-grotesk relative overflow-hidden">
-      
+     {/* Grid overlay */}
+  <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
       {/* Content Wrapper */}
       <div className=" flex flex-col items-center px-4">
         {/* Top Bar */}
@@ -68,7 +69,6 @@ export default function App() {
     ↓</div>
         </div>
       </div>
-
 
 
       {/* About Section */}
@@ -174,7 +174,7 @@ export default function App() {
       </div>
 
       {/* Project 2 */}
-      <div className="flex flex-row justify-between items-start border-t border-white/10 pt-10">
+      <div className="flex flex-row justify-between items-start ">
         <div>
           <p className="text-gray-400 text-sm">2024</p>
           <p className="text-base text-sm">LOGOFOLIO v1.0</p>
