@@ -189,9 +189,6 @@ export default function App() {
 </section>
 
 
-
-
-
       {/* Footer Section */}
       <footer className="w-full bg-black/70 backdrop-blur-md border-t border-white/10 text-white py-6 px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs sm:text-sm font-interTight">
         {/* Left */}
