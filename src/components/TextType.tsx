@@ -26,7 +26,7 @@ export default function TextType({
   useEffect(() => {
     const currentText = text[index % text.length];
 
-    let timer: NodeJS.Timeout;
+    let timer: ReturnType<typeof setTimeout> | null = null;
 
     if (!isDeleting && displayedText.length < currentText.length) {
       // Typing
@@ -49,7 +49,9 @@ export default function TextType({
       setIndex((prev) => prev + 1);
     }
 
-    return () => clearTimeout(timer);
+    return () => {
+      if (timer !== null) clearTimeout(timer);
+    };
   }, [displayedText, isDeleting, index, text, typingSpeed, deletingSpeed, pauseDuration]);
 
   return (
