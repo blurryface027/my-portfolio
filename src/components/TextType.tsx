@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 
 interface TextTypeProps {
@@ -13,8 +12,8 @@ interface TextTypeProps {
 
 export default function TextType({
   text,
-  typingSpeed = 100,
-  deletingSpeed = 50,
+  typingSpeed = 120,
+  deletingSpeed = 60,
   pauseDuration = 1500,
   showCursor = true,
   cursorCharacter = "|",
@@ -23,22 +22,24 @@ export default function TextType({
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
+  const getRandomSpeed = (base: number) =>
+    base + Math.random() * 100; // adds variation
+
   useEffect(() => {
     const currentText = text[index % text.length];
-
     let timer: ReturnType<typeof setTimeout> | null = null;
 
     if (!isDeleting && displayedText.length < currentText.length) {
       // Typing
       timer = setTimeout(
         () => setDisplayedText(currentText.slice(0, displayedText.length + 1)),
-        typingSpeed
+        getRandomSpeed(typingSpeed)
       );
     } else if (isDeleting && displayedText.length > 0) {
       // Deleting
       timer = setTimeout(
         () => setDisplayedText(currentText.slice(0, displayedText.length - 1)),
-        deletingSpeed
+        getRandomSpeed(deletingSpeed)
       );
     } else if (!isDeleting && displayedText.length === currentText.length) {
       // Pause before deleting
@@ -57,7 +58,7 @@ export default function TextType({
   return (
     <span>
       {displayedText}
-      {showCursor && <span className="animate-pulse">{cursorCharacter}</span>}
+      {showCursor && <span className="animate-blink">{cursorCharacter}</span>}
     </span>
   );
 }

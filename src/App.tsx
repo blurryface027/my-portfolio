@@ -200,16 +200,6 @@ export default function App() {
   </div>
 </section>
 
-{/* Quote Section */}
-<section className="w-full bg-black text-white py-20 px-6">
-  <div className="max-w-6xl mx-auto"> {/* <- same wrapper */}
-    <h2 className="font-interTight text-left text-5xl sm:text-5xl md:text-6xl leading-tight">
-      Minimal.<br />
-      Modern.<br />
-      Meaningful.
-    </h2>
-  </div>
-</section>
 
 
 
