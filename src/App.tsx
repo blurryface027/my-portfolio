@@ -142,7 +142,7 @@ export default function App() {
     <div className="grid grid-cols-1 gap-10 text-left font-interTight">
       
       {/* Project 1 */}
-      <div className="flex flex-row justify-between items-start  border-white/10 pt-10">
+      <div className="flex flex-row justify-between items-start border-white/10">
         <div>
           <p className="text-gray-400 text-sm">2025</p>
           <p className="text-base text-sm">PORTFOLIO WEBSITE</p>
@@ -158,12 +158,14 @@ export default function App() {
         {/* Technologies Used */}
         <div className="text-right">
           <p className="text-gray-400 text-sm">Technologies</p>
-          <p className="text-base text-sm">React, Tailwind CSS, Typescript, JavaScript</p>
+          <p className="text-base text-sm">
+            React, Tailwind CSS, Typescript, JavaScript
+          </p>
         </div>
       </div>
 
       {/* Project 2 */}
-      <div className="flex flex-row justify-between items-start ">
+      <div className="flex flex-row justify-between items-start">
         <div>
           <p className="text-gray-400 text-sm">2024</p>
           <p className="text-base text-sm">LOGOFOLIO v1.0</p>
@@ -176,18 +178,16 @@ export default function App() {
             Visit <span className="ml-1">→</span>
           </a>
         </div>
-        {/* Technologies Used */}
+        {/* Design Tools */}
         <div className="text-right">
           <p className="text-gray-400 text-sm">Design Tools</p>
           <p className="text-base text-sm">Illustrator, Photoshop</p>
         </div>
       </div>
-
-
-
     </div>
   </div>
 </section>
+
 
 
 
