@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import TextType from "./components/TextType";
 
 export default function App() {
   const [time, setTime] = useState(new Date());
@@ -45,17 +44,7 @@ export default function App() {
             </span>
           </div>
 
-          {/* Main Name */}
-<h1 className="text-7xl sm:text-7xl md:text-8xl lg:text-8xl mt-1 font-bold tracking-tight text-center">
-  <TextType
-    text={["KRISHNA SHARMA"]}
-    typingSpeed={90}
-    deletingSpeed={50}
-    pauseDuration={2000}
-    showCursor={true}
-    cursorCharacter=""
-  />
-</h1>
+          {/* Main Name */} <h1 className="text-7xl sm:text-7xl md:text-8xl lg:text-8xl mt-1 font-bold tracking-tight text-center"> KRISHNA SHARMA </h1>
 
           {/* Down Arrow */}
           <div className="animate-bounce text-2xl mt-10 sm:text-3xl cursor-pointer"
