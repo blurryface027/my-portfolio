@@ -1,6 +1,22 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
+import LogoLoop from "@/components/LogoLoop";
+
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+} from "react-icons/si";
+
+const techLogos = [
+  { node: <SiReact className="text-3xl" />, title: "React", href: "https://react.dev" },
+  { node: <SiNextdotjs className="text-3xl" />, title: "Next.js", href: "https://nextjs.org" },
+  { node: <SiTypescript className="text-3xl" />, title: "TypeScript", href: "https://www.typescriptlang.org" },
+  { node: <SiTailwindcss className="text-3xl" />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+];
+
 export default function App() {
   const [time, setTime] = useState(new Date());
 
@@ -19,7 +35,7 @@ export default function App() {
       <div className=" flex flex-col items-center px-4">
         {/* Top Bar */}
         <div className="absolute top-5 left-5 text-[10px] sm:text-xs md:text-sm font-interTight">
-  <a 
+  <a                                         
     href="mailto:krishna158310@gmail.com" 
     className="hover:text-gray-300 transition no-underline"
   >
@@ -58,6 +74,23 @@ export default function App() {
     ↓</div>
         </div>
       </div>
+
+
+<div className="relative h-[200px] overflow-hidden bg-transparent text-white">
+  <LogoLoop
+    logos={techLogos}
+    speed={120}
+    direction="left"
+    logoHeight={48}
+    gap={40}
+    hoverSpeed={0}
+    scaleOnHover
+    fadeOut
+    fadeOutColor="transparent"
+    ariaLabel="Technology partners"
+  />
+</div>
+
 
 
       {/* About Section */}
@@ -187,7 +220,7 @@ export default function App() {
     </div>
   </div>
 </section>
-
+                  
 
       {/* Footer Section */}
       <footer className="w-full bg-black/70 backdrop-blur-md border-t border-white/10 text-white py-6 px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs sm:text-sm font-interTight">
