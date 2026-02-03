@@ -1,22 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
-import LogoLoop from "@/components/LogoLoop";
-
-import {
-  SiReact,
-  SiNextdotjs,
-  SiTypescript,
-  SiTailwindcss,
-} from "react-icons/si";
-
-const techLogos = [
-  { node: <SiReact className="text-3xl" />, title: "React", href: "https://react.dev" },
-  { node: <SiNextdotjs className="text-3xl" />, title: "Next.js", href: "https://nextjs.org" },
-  { node: <SiTypescript className="text-3xl" />, title: "TypeScript", href: "https://www.typescriptlang.org" },
-  { node: <SiTailwindcss className="text-3xl" />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
-];
-
 export default function App() {
   const [time, setTime] = useState(new Date());
 
@@ -44,7 +28,7 @@ export default function App() {
 </div>
 
         <div className="absolute top-5 right-5 text-[10px] sm:text-xs md:text-sm font-interTight text-right">
-          GRAPHIC DESIGNER<br /> FRONTEND DEVELOPER<br /> BASED IN INDIA
+          GRAPHIC DESIGNER<br /> FRONTEND DEVELOPER<br /> DEVOPS PRACTITIONER
         </div>
 
 
@@ -53,10 +37,13 @@ export default function App() {
           {/* Glassmorphic Floating Tags */}
           <div className="flex flex-wrap gap-3 sm:gap-4 justify-center text-[9px] sm:text-[10px] md:text-[12px] font-interTight">
             <span className="px-3 sm:px-4 py-2 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-              THINK DESIGN
+              DESIGN
             </span>
             <span className="px-3 sm:px-4 py-2 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
-              BUILD CODE
+              FRONTEND
+            </span>
+            <span className="px-3 sm:px-4 py-2 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
+              DEVOPS
             </span>
           </div>
 
@@ -76,20 +63,6 @@ export default function App() {
       </div>
 
 
-<div className="relative h-[200px] overflow-hidden bg-transparent text-white">
-  <LogoLoop
-    logos={techLogos}
-    speed={120}
-    direction="left"
-    logoHeight={48}
-    gap={40}
-    hoverSpeed={0}
-    scaleOnHover
-    fadeOut
-    fadeOutColor="transparent"
-    ariaLabel="Technology partners"
-  />
-</div>
 
 
 
@@ -106,19 +79,18 @@ export default function App() {
     <div className="text-left">
       <p className="text-base leading-relaxed text-gray-300 text-sm">
         HI, I’M KRISHNA — GRAPHIC DESIGNER<br/>
-        AND FRONTEND DEVELOPER, CRAFTING MODERN DIGITAL EXPERIENCES.
+        FRONTEND DEVELOPER, AND DEVOPS PRACTITIONER, CRAFTING MODERN DIGITAL EXPERIENCES AND PRODUCTION-READY SYSTEMS.
       </p>
     </div>
 
     {/* Detailed Description */}
     <div className="text-left">
       <p className="text-base leading-relaxed text-gray-300 text-sm">
-        I SPECIALIZE IN CREATING DISTINCTIVE VISUAL IDENTITIES AND SEAMLESS INTERFACES USING VITE, NEXT.JS, REACT, ANGULAR, TYPESCRIPT, JAVASCRIPT, HTML, CSS, FRAMER MOTION, AND TAILWIND.
+        I DESIGN AND BUILD FRONTEND APPLICATIONS AND AUTOMATE THEIR DEPLOYMENT USING AWS, DOCKER, KUBERNETES, HELM, CI/CD, AND GITOPS WITH ARGOCD, ENSURING RELIABLE, SCALABLE, AND PRODUCTION-READY SYSTEMS.
       </p>
     </div>
   </div>
 </section>
-
 
 
 
@@ -168,12 +140,35 @@ export default function App() {
   <div className="max-w-6xl mx-auto">
     {/* Title */}
     <h2 className="text-4xl sm:text-4xl font-interTight mb-16 text-left">
-      Work
+      Projects
     </h2>
 
     {/* Projects Grid */}
     <div className="grid grid-cols-1 gap-10 text-left font-interTight">
       
+{/* Project 3 */}
+      <div className="flex flex-row justify-between items-start border-white/10">
+        <div>
+          <p className="text-gray-400 text-sm">2026</p>
+          <p className="text-base text-sm">GITOPS BASED KUBERNETES DEPLOYMENT</p>
+          <a
+            href="https://github.com/blurryface027/gitops-k8s-deployment"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-red-500 hover:underline flex items-center text-sm mt-1"
+          >
+            Visit <span className="ml-1">→</span>
+          </a>
+        </div>
+        {/* Technologies Used */}
+        <div className="text-right">
+          <p className="text-gray-400 text-sm">Technologies</p>
+          <p className="text-base text-sm">
+            Kubernetes, ArgoCD, Helm, Docker, GitHub, Linux
+          </p>
+        </div>
+      </div>
+
       {/* Project 1 */}
       <div className="flex flex-row justify-between items-start border-white/10">
         <div>
@@ -220,7 +215,7 @@ export default function App() {
     </div>
   </div>
 </section>
-                  
+
 
       {/* Footer Section */}
       <footer className="w-full bg-black/70 backdrop-blur-md border-t border-white/10 text-white py-6 px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs sm:text-sm font-interTight">
