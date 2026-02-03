@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import LogoLoop from '@/components/LogoLoop';
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
-
 // Alternative with image sources
 const imageLogos = [
   { src: "/logos/html.png", alt: "HTML" },
