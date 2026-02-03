@@ -109,7 +109,7 @@ export default function App() {
 <div style={{ height: '200px', position: 'relative', overflow: 'hidden'}}>
       {/* Basic horizontal loop */}
       <LogoLoop
-        logos={techLogos, imageLogos}
+        logos={imageLogos}
         speed={100}
         direction="left"
         logoHeight={40}
