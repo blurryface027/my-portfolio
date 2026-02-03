@@ -3,14 +3,6 @@ import "./App.css";
 import LogoLoop from '@/components/LogoLoop';
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
 
-
-const techLogos = [
-  { node: <SiReact />, title: "React" },
-  { node: <SiNextdotjs />, title: "Next.js"},
-  { node: <SiTypescript />, title: "TypeScript"},
-  { node: <SiTailwindcss />, title: "Tailwind CSS" },
-];
-
 // Alternative with image sources
 const imageLogos = [
   { src: "/logos/html.png", alt: "HTML" },
