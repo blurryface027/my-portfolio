@@ -1,37 +1,39 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import LogoLoop from '@/components/LogoLoop';
-// Alternative with image sources
-const imageLogos = [
-  { src: "/logos/html.png", alt: "HTML" },
-  { src: "/logos/css.png", alt: "CSS" },
-  { src: "/logos/js.png", alt: "JavaScript" },
-  { src: "/logos/ts.png", alt: "TypeScript" },
-  { src: "/logos/react.png", alt: "React" },
-  { src: "/logos/nextjs.png", alt: "Next.js" },
-  { src: "/logos/angular.png", alt: "Angular" },
-  { src: "/logos/jquery.png", alt: "jQuery" },
-  { src: "/logos/nodejs.png", alt: "Node.js" },
-  { src: "/logos/postgres.png", alt: "PostgreSQL" },
-  { src: "/logos/kubernetes.png", alt: "Kubernetes" },
-  { src: "/logos/docker.png", alt: "Docker" },
-  { src: "/logos/linux.png", alt: "Linux" },
-  { src: "/logos/git.png", alt: "Git" },
-  { src: "/logos/github.png", alt: "GitHub" },
-  { src: "/logos/aws.png", alt: "AWS" },
-  { src: "/logos/vscode.png", alt: "VS Code" },
-  { src: "/logos/wp.png", alt: "WordPress" },
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiHtml5, SiCss3, SiJavascript, SiNodedotjs, SiLinux, SiDocker, SiKubernetes, SiGithub, SiGitlab, SiGit, SiDigitalocean, SiCloudflare, SiJenkins, SiBitbucket, SiArgo, SiPrometheus, SiGrafana, SiTerraform, SiTrivy, SiNginx, SiAdobephotoshop, SiAdobeillustrator, SiBehance } from 'react-icons/si';
+import { FaAws } from "react-icons/fa";
 
-  // 🎨 Design & Creative Tools
-  { src: "/logos/ps.png", alt: "Adobe Photoshop" },
-  { src: "/logos/ai.png", alt: "Adobe Illustrator" },
-  { src: "/logos/ae.png", alt: "Adobe After Effects" },
-  { src: "/logos/figma.png", alt: "Figma" },
-  { src: "/logos/canva.png", alt: "Canva" },
-  { src: "/logos/be.png", alt: "Behance" },
+const techLogos = [
+  { node: <SiReact />, title: "React"},
+  { node: <SiNextdotjs />, title: "Next.js"},
+  { node: <SiTypescript />, title: "TypeScript"},
+  { node: <SiTailwindcss />, title: "Tailwind CSS"},
+  { node: <SiHtml5 />, title: "HTML5"},
+  { node: <SiCss3 />, title: "CSS3"},
+  { node: <SiJavascript />, title: "JavaScript"},
+  { node: <SiNodedotjs />, title: "Node.js"}, 
+  { node: <SiLinux />, title: "Linux"}, 
+  { node: <SiDocker />, title: "Docker"},
+  { node: <SiKubernetes />, title: "Kubernetes"},
+  { node: <FaAws />, title: "AWS"},  
+  { node: <SiDigitalocean />, title: "DigitalOcean"}, 
+  { node: <SiCloudflare />, title: "Cloudflare"},
+  { node: <SiGithub />, title: "GitHub"}, 
+  { node: <SiGitlab />, title: "GitLab"}, 
+  { node: <SiGit />, title: "Git"}, 
+  { node: <SiJenkins />, title: "Jenkins"}, 
+  { node: <SiBitbucket />, title: "Bitbucket"}, 
+  { node: <SiArgo />, title: "Argo"}, 
+  { node: <SiPrometheus />, title: "Prometheus"}, 
+  { node: <SiGrafana />, title: "Grafana"}, 
+  { node: <SiTerraform />, title: "Terraform"}, 
+  { node: <SiTrivy />, title: "Trivy"}, 
+  { node: <SiNginx />, title: "Nginx"}, 
+  { node: <SiAdobephotoshop />, title: "Adobe Photoshop"}, 
+  { node: <SiAdobeillustrator />, title: "Adobe Illustrator"}, 
+  { node: <SiBehance />, title: "Behance"}, 
 
-  // 📢 Social/Community
-  { src: "/logos/dc.png", alt: "Discord" },
 ];
 
 export default function App() {
@@ -99,19 +101,17 @@ export default function App() {
 <div style={{ height: '200px', position: 'relative', overflow: 'hidden'}}>
       {/* Basic horizontal loop */}
       <LogoLoop
-        logos={imageLogos}
+        logos={techLogos}
         speed={100}
         direction="left"
         logoHeight={40}
         gap={60}
         hoverSpeed={0}
         scaleOnHover
-        fadeOut={false}
         fadeOutColor="#ffffff"
         ariaLabel="Technology partners"
       />
-      </div>
-
+</div>
 
       {/* About Section */}
 <section id="about" className="w-full bg-black text-white py-20 px-6">
