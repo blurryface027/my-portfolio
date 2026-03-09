@@ -55,10 +55,10 @@ export default function App() {
         {/* Top Bar */}
         <div className="absolute top-5 left-5 text-[10px] sm:text-xs md:text-sm font-interTight">
   <a                                         
-    href="mailto:krishna158310@gmail.com" 
+    href="mailto:hello@krishnasharma.dev" 
     className="hover:text-gray-300 transition no-underline"
   >
-    WORK@KRISHNASHARMA.DEV
+    HELLO@KRISHNASHARMA.DEV
   </a>
 </div>
 
